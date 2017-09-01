@@ -1,6 +1,8 @@
 # CURSO_UDEMY_TESTES_JUNIT
 Testes Automáticos + Curso Completo de Teste de Software
 
+Prof. Gustavo Farias
+
 Sobre este curso
 
 Indiscutivelmente o mais completo: Automação de Testes + Fundamentos e Técnicas do Teste de Software, tudo em um curso! 
