@@ -20,7 +20,7 @@ public class GerenciadoraContasTest {
 		
 		/*=========Montagem do cenário=========*/
 		//criando contas
-		ContaCorrente cc1 = new ContaCorrente(1, 200, true);
+		ContaCorrente cc1 = new ContaCorrente(1, 200.0, true);
 		ContaCorrente cc2 = new ContaCorrente(2, 0, true);
 		
 		//inserindo as contas na lista do banco
@@ -31,8 +31,8 @@ public class GerenciadoraContasTest {
 		gerContas = new GerenciadoraContas(lstContasDoBanco);
 		
 		/*=========Execução==========*/
-		boolean sucesso =  gerContas.transfereValor(1, 100, 2);
-		boolean semSucesso = gerContas.transfereValor(2, 300, 1);
+		boolean sucesso =  gerContas.transfereValor(1, 100.0, 2);
+		boolean semSucesso = gerContas.transfereValor(2, 300.0, 1);
 		
 		/*=========Verificação========*/
 		assertTrue(sucesso);
@@ -41,8 +41,8 @@ public class GerenciadoraContasTest {
 		assertThat(semSucesso, is(false));	
 		
 		//como o curso fez
-		assertThat(cc1.getSaldo(), is(100));
-		assertThat(cc2.getSaldo(), is(100));
+		assertThat(cc1.getSaldo(), is(100.0));
+		assertThat(cc2.getSaldo(), is(100.0));
 
 	}
 
