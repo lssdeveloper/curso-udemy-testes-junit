@@ -23,3 +23,12 @@ hs_err_pid*
 
 # RemoteSystemFile
 Remote*.
+
+# .classpath
+*.classpath
+
+# .project
+*.project
+
+# .gitignore
+*.gitignore
