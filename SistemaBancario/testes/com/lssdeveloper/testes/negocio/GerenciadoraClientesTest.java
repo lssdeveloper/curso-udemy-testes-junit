@@ -15,6 +15,9 @@ public class GerenciadoraClientesTest {
 
 	@Test
 	public void testPesquisaCliente() {
+		
+		/*===========Montagem do Cenário=========*/
+		
 		//criando clientes
 		Cliente cliente001 = new Cliente(1, "Leandro Serra", 41, "leandro.serra@gmail.com", 1, true);
 		Cliente cliente002 = new Cliente(2, "Amanda Beatriz", 19, "amanda.beatriz@gmail.com", 1, true);
@@ -40,8 +43,9 @@ public class GerenciadoraClientesTest {
 		/*
 		 * como foi feito no curso
 		 */
-		
+		/* ========= Execução ========*/
 		Cliente cliente2 = gerClientes.pesquisaCliente(1);
+		/* ========= Verificação ===========*/
 		assertThat(cliente2.getId(), is(1));
 		assertThat(cliente2.getEmail(), is("leandro.serra@gmail.com"));
 	}
