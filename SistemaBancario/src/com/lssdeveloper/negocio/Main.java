@@ -141,8 +141,8 @@ public class Main {
 		contasDoBanco.add(conta02);
 		
 		// criando dois clientes e associando as contas criadas acima a eles
-		Cliente cliente01 = new Cliente(1, "Leandro Serra", 31, "lssdeveloper@gmail.com", conta01.getId(), true);
-		Cliente cliente02 = new Cliente(2, "Amanda Beatriz ", 34, "abdeveloper@gmail.com", conta02.getId(), true);
+		Cliente cliente01 = new Cliente(1, "Leandro Serra", 41, "lssdeveloper@gmail.com", conta01.getId(), true);
+		Cliente cliente02 = new Cliente(2, "Amanda Beatriz ", 19, "abdeveloper@gmail.com", conta02.getId(), true);
 		// inserindo os clientes criados na lista de clientes do banco
 		clientesDoBanco.add(cliente01);
 		clientesDoBanco.add(cliente02);
